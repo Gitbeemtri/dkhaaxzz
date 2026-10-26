@@ -1,0 +1,27 @@
+/* Proyek: KOLOM FOTO PROYEK. Kalau hanya 1 proyek, otomatis tampil besar (foto di kiri, teks di kanan). */
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:40px 36px}
+.proj:nth-child(even){margin-top:64px}
+.shot{position:relative;aspect-ratio:4/3;border-radius:28px;overflow:hidden;background:var(--c,var(--sage));border:1.5px solid var(--forest);display:grid;place-items:center}
+.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.proj:hover .shot img{transform:scale(1.045)}
+.shot .slot{position:absolute;inset:14px;border:1.5px dashed rgba(18,54,47,.5);border-radius:18px}
+.shot .slot b{font-size:3rem}
+.proj:nth-child(4n+1){--c:#DCD3FA}
+.proj:nth-child(4n+2){--c:var(--sage)}
+.proj:nth-child(4n+3){--c:#E9E3D2}
+.proj:nth-child(4n+4){--c:#C9E3E0}
+.meta{display:flex;justify-content:space-between;gap:12px;margin:18px 0 8px;font-size:.92rem;font-weight:600;color:var(--lilac-d)}
+.proj h3{font-size:1.8rem}
+.proj p{color:var(--muted);margin-top:6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{font-size:.82rem;padding:2px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.6)}
+.proj .go{display:inline-block;margin-top:14px;font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--lilac-d)}
+.proj .go:hover{color:var(--lilac-d)}
+
+/* Mode 1 proyek: tampilan besar dua kolom */
+.projects.single{grid-template-columns:1fr}
+.projects.single .proj{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center;margin-top:0}
+.projects.single .shot{aspect-ratio:auto;display:block}
+.projects.single .shot img{height:auto}
+.projects.single .meta{margin-top:0}
+.projects.single h3{font-size:2.2rem}

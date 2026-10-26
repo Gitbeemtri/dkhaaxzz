@@ -1,0 +1,24 @@
+/* Reset, tipografi dasar, tombol, dan judul section. */
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);line-height:1.7;font-size:1.04rem;background-color:var(--bg);
+  background-image:var(--noise),
+    radial-gradient(700px 480px at 92% 2%,rgba(183,166,244,.42),transparent 70%),
+    radial-gradient(800px 560px at 0% 38%,rgba(207,221,203,.95),transparent 70%),
+    radial-gradient(700px 500px at 100% 75%,rgba(183,166,244,.22),transparent 70%)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lilac-d);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.02em}
+em{font-style:italic;color:var(--lilac-d)}
+
+section{padding:96px 0 0}
+.head{display:flex;align-items:baseline;gap:18px;margin-bottom:44px}
+.head h2{font-size:clamp(2.2rem,5.4vw,3.6rem)}
+.head span{flex:1;border-bottom:1px solid var(--line);transform:translateY(-8px)}
+
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid var(--forest);background:var(--forest);color:#fff;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);background:var(--lilac-d);border-color:var(--lilac-d)}
+.btn.ghost{background:transparent;color:var(--forest)}
+.btn.ghost:hover{background:var(--forest);border-color:var(--forest);color:#fff}

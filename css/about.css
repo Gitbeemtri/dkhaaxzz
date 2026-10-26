@@ -1,0 +1,8 @@
+/* Bagian Tentang Saya dan angka ringkas. */
+.lead{font-family:var(--serif);font-size:clamp(1.55rem,3.4vw,2.35rem);line-height:1.3;letter-spacing:-.01em;max-width:46rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
+.cols p{color:var(--muted)}
+.cols p+p{margin-top:1em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-top:48px;border-top:1px solid var(--line)}
+.stat{padding:24px 20px 4px 0;color:var(--muted);font-size:.95rem}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:3rem;line-height:1.1;color:var(--forest)}

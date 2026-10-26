@@ -1,0 +1,8 @@
+/* Daftar pengalaman dan pendidikan. */
+.rows{list-style:none;padding:0;border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:190px 1fr;gap:24px;padding:30px 16px;margin:0 -16px;border-top:1px solid var(--line);border-radius:6px;transition:background .2s}
+.row:hover{background:rgba(255,255,255,.6)}
+.row .when{font-weight:600;color:var(--lilac-d);padding-top:6px}
+.row h3{font-size:1.65rem}
+.row .where{font-weight:600;color:var(--forest);margin:4px 0 6px}
+.row p{color:var(--muted);max-width:40rem}

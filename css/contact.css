@@ -1,0 +1,12 @@
+/* Blok kontak dan footer. */
+.contact{padding:110px 0 40px}
+.box{position:relative;overflow:hidden;border-radius:36px;background:var(--forest);color:#fff;padding:72px 56px;
+  background-image:radial-gradient(520px 340px at 100% 0%,rgba(183,166,244,.5),transparent 70%),radial-gradient(420px 300px at 0% 100%,rgba(207,221,203,.2),transparent 70%),var(--noise)}
+.box h2{font-size:clamp(2.6rem,7vw,5.2rem);max-width:12ch}
+.box em{color:var(--lilac)}
+.box p{max-width:30rem;margin-top:20px;color:var(--sage)}
+.box .btn{background:#fff;border-color:#fff;color:var(--forest)}
+.box .btn:hover{background:var(--lilac);border-color:var(--lilac)}
+.box .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.box .btn.ghost:hover{background:#fff;color:var(--forest)}
+footer{padding:28px 0 40px;text-align:center;color:var(--muted);font-size:.92rem}

@@ -1,0 +1,7 @@
+/* Pita keahlian yang berjalan di bawah hero. */
+.band{background:var(--forest);color:var(--sage);overflow:hidden;padding:22px 0;border-block:1px solid var(--forest)}
+.track{display:flex;gap:34px;width:max-content;animation:geser 38s linear infinite}
+.band:hover .track{animation-play-state:paused}
+.track span{font-family:var(--serif);font-style:italic;font-size:1.9rem;white-space:nowrap}
+.track span::after{content:"✦";font-style:normal;font-size:1rem;color:var(--lilac);margin-left:34px;vertical-align:middle}
+@keyframes geser{to{transform:translateX(calc(-50% - 17px))}}

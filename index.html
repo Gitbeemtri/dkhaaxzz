@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portofolio</title>
+
+<!-- CSS dipisah per bagian. Urutan penting: variables.css harus paling atas. -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/band.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/experience.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/certificate.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<nav><ul id="menu"></ul></nav>
+
+<header class="hero" id="atas">
+  <div class="wrap">
+    <div>
+      <span class="hello" id="status"></span>
+      <h1 id="nama"></h1>
+      <p class="profesi" id="profesi"></p>
+      <p class="intro" id="intro"></p>
+      <div class="btns">
+        <a class="btn" href="#proyek">Lihat proyek →</a>
+        <a class="btn ghost" href="#kontak">Hubungi saya</a>
+      </div>
+    </div>
+    <!-- KOLOM 1: FOTO DIRI -->
+    <div class="frame">
+      <div class="star" aria-hidden="true"></div>
+      <div class="photo" id="foto"></div>
+    </div>
+  </div>
+</header>
+
+<div class="band" aria-label="Keahlian"><div class="track" id="skill"></div></div>
+
+<section id="tentang">
+  <div class="wrap">
+    <div class="head"><h2>Tentang <em>saya</em></h2><span></span></div>
+    <p class="lead" id="lead"></p>
+    <div class="cols" id="tentangTeks"></div>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<section id="pengalaman">
+  <div class="wrap">
+    <div class="head"><h2>Pengalaman <em>&amp; pendidikan</em></h2><span></span></div>
+    <ul class="rows" id="rows"></ul>
+  </div>
+</section>
+
+<!-- KOLOM 2: FOTO PROYEK -->
+<section id="proyek">
+  <div class="wrap">
+    <div class="head"><h2>Proyek <em>pilihan</em></h2><span></span></div>
+    <div class="projects" id="proyekGrid"></div>
+  </div>
+</section>
+
+<section id="sertifikat">
+  <div class="wrap">
+    <div class="head"><h2>Sertifikat <em>&amp; pencapaian</em></h2><span></span></div>
+    <div class="certs" id="certs"></div>
+  </div>
+</section>
+
+<section class="contact" id="kontak">
+  <div class="wrap">
+    <div class="box">
+      <h2 id="kontakJudul"></h2>
+      <p id="kontakTeks"></p>
+      <div class="btns" id="kontakBtns"></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap" id="footer"></div></footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

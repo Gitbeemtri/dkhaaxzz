@@ -1,0 +1,14 @@
+/* Bagian sertifikat: gambar sertifikat di kiri, rincian di kanan. */
+.certs{display:grid;gap:48px}
+.cert{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+.cert-img{display:block;border-radius:20px;overflow:hidden;border:1.5px solid var(--forest);background:#fff;box-shadow:0 18px 40px rgba(18,54,47,.14)}
+.cert-img img{display:block;width:100%;height:auto;transition:transform .5s}
+a.cert-img:hover img{transform:scale(1.03)}
+.cert-img.empty{aspect-ratio:10/7;display:grid;place-items:center;background:linear-gradient(160deg,#E4DDFB,var(--sage))}
+.cert h3{font-size:2rem}
+.cert .by{font-weight:600;color:var(--forest);margin-top:8px}
+.cert dl{margin-top:22px;border-top:1px solid var(--line)}
+.cert dl div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.cert dt{color:var(--muted)}
+.cert dd{font-weight:600;text-align:right}
+.cert .btns{margin-top:24px}
